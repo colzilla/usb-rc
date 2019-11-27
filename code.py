@@ -11,8 +11,8 @@ debug=False
 gp = Gamepad()
 
 #setup the pulse readers
-ch1 = pulseio.PulseIn(board.A0, 5)
-ch2 = pulseio.PulseIn(board.A1, 5)
+ch1 = pulseio.PulseIn(board.A3, 5)
+ch2 = pulseio.PulseIn(board.A4, 5)
 
 #used in auto-calibration
 ch1min = 1499
@@ -54,8 +54,9 @@ while True:
         x=range_map(ch1in, ch1min, ch1max, -127, 127)
         y=range_map(ch2in, ch2min, ch2max, -127, 127) * -1
         gp.move_joysticks(x,y)
-        print("ch1min", ch1min, "ch1in", ch1in, "ch1max", ch1max, "ch2min", ch2min, "ch2in", ch2in, "ch2max", ch2max, "joy_x", x, "joy_y", y)
-        # sleep(0.01)
+        if(debug): print("ch1min", ch1min, "ch1in", ch1in, "ch1max", ch1max, "ch2min", ch2min, "ch2in", ch2in, "ch2max", ch2max, "joy_x", x, "joy_y", y)
+        print("x", x, ", y", y)
+        sleep(0.001)
     except Exception as e:
         if(debug): print("ax", ch1in, "ay", ch2in, e)
         pass
