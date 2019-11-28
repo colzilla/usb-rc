@@ -17,4 +17,5 @@ Edit the code.py file on the Itsy and change debug from False to True for extra 
 
 At every restart of the ubs-rc code, set the TX to full FWD, REV, L and R and the unit will self-calibrate the extents.
 
+Itsy can be bought from here: https://www.adafruit.com/product/3800
 
