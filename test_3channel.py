@@ -5,7 +5,13 @@ from adafruit_hid.gamepad import Gamepad
 from time import sleep
 import sys
 
+startpause = 3
+print("usb-rc - an adapter from RC car receiver to USB-gamepad/joystick. https://github.com/colzilla/usb-rc")
+print("starting in {} sec...".format(startpause))
+sleep(startpause)
+
 debug=False
+shush=False
 
 #create the gampepad object
 gp = Gamepad()
@@ -73,7 +79,7 @@ while True:
                          "ch2min", ch2min, "ch2in", ch2in, "ch2max", ch2max, 
                          "ch3min", ch3min, "ch3in", ch3in, "ch3max", ch3max, 
                          "joy_x", x, "joy_y", y, "joy_z", z)
-        print("x", x, ", y", y, ", z", z)
+        if(not shush): print("x", x, ", y", y, ", z", z)
         sleep(0.001)
     except Exception as e:
         if(debug): print("ax", ch1in, "ay", ch2in, "az", ch3in, e)
@@ -83,3 +89,4 @@ while True:
 
     
     
+
