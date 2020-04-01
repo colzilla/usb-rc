@@ -5,7 +5,8 @@ from adafruit_hid.gamepad import Gamepad
 from time import sleep
 import sys
 
-print("usb-rc - an adapter from RC car receiver to USB-gamepad/joystick. https://github.com/colzilla/usb-rc")
+version="20200331-1933"
+print("usb-rc version [{}] - an adapter from RC car receiver to USB-gamepad/joystick. https://github.com/colzilla/usb-rc".format(version))
 
 debug=False
 
