@@ -6,9 +6,11 @@ Install
 
 1. Copy the "adafruit_hid" folder and the "code.py" file to the CIRCUITPY folder on your AdaFruit ItsyBitsy
 2. Connect the RX GND to the "G" pin on the Itsy
-3. Connect the RX 5V to the "USB" pin on the Itsy
-4. Connect the RX CH1 to the "A3" pin on the Itsy
-5. Connect the RX CH2 to the "A4" pin on the Itsy
+3. Connect the RX 5V to the "VHi" pin on the Itsy
+4. Connect the RX CH1 to the "A1" pin on the Itsy
+5. Connect the RX CH2 to the "A2" pin on the Itsy
+6. Connect the RX CH3 to the "A3" pin on the Itsy
+7. Connect the RX CH4 to the "A4" pin on the Itsy
 
 See the images folder for pictures.
 ![itsy_a](https://github.com/colzilla/usb-rc/blob/master/images/IMG_9031.jpg)
