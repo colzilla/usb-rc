@@ -1,6 +1,9 @@
 # usb-rc
 AdaFruit Trinket M0 and ItsyBitsy M4 USB adapter for RC receivers
 
+***update - please take the time to watch the video kindly created by Matt Spencer from Vancouver, British Columbia!***
+https://www.youtube.com/watch?v=9zhCrwn6ba0
+
 Install
 
 1. Copy the "adafruit_hid" folder and the "code.py" file to the CIRCUITPY folder on your AdaFruit ItsyBitsy
