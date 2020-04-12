@@ -1,5 +1,6 @@
 # usb-rc
-AdaFruit Trinket M0 and ItsyBitsy M4 USB adapter for RC receivers
+AdaFruit ~~Trinket M0 and~~ ItsyBitsy M4 USB adapter for RC receivers
+The Trinkets have a much slower CPU than the ItsyBitsy M4, and although that's not been an issue on the one I made, Ive had reports of some jittering on some combinations of RX and PC, so I'm no longer recommending them.  YMMV.
 
 ***update - please take the time to watch the video kindly created by Matt Spencer from Vancouver, British Columbia!***
 https://www.youtube.com/watch?v=9zhCrwn6ba0
